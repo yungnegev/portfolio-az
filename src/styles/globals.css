@@ -1,9 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@200;300;400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply bg-amber-50 text-zinc-900 font-montserrat 
+    @apply bg-[#F8F0E3] text-zinc-900 font-montserrat 
+}
+
+.home__img {
+    background: url(../../public/images/profile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    order: 1;
+    justify-self: center;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+    animation-delay: 0ms;
+}
+
+.home__subtitle:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: #18181b;
+    left: 0;
+    top: 1rem;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
+    }
+    50% {
+         border-radius: 30% 60% 70% 40% / 50% 60% 30% 40%;  
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }
