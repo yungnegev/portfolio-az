@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
-// import Image from "next/image";
-// import profSrc from '../../public/images/profile.jpg'
+import Image from "next/image";
+import profSrc from '../../public/images/profile.jpg'
 
 
 
@@ -11,11 +11,8 @@ const Home: NextPage = () => {
           <div className="flex items-center justify-between w-full">
             
             <div className="w-1/2">
-              {/* <Image src={profSrc} alt='AZ' width={300} height={300} className="home__img"/> */}
-              <div className="home__img">
-              {/* image added through css */}
-              </div>
-            </div>
+              <Image src={profSrc} alt='AZ' width={360} height={360} className="home__img"/> 
+             </div>
 
             <div className="w-1/2 flex flex-col gap-4 font-poppins overflow-hidden">
               <h1 className="font-bold text-7xl ">ARTHUR ZIMULDINOV</h1>
