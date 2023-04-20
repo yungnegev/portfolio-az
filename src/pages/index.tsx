@@ -28,11 +28,11 @@ const Home: NextPage = () => {
             {/* MAIN */}
             <div className="w-1/2 flex flex-col gap-4 font-poppins overflow-hidden">
               <m.h1 
-                className="font-bold text-7xl "
+                className="font-nobel text-7xl"
                 initial={{ y: -70, opacity: 0.65 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                >ARTHUR ZIMULDINOV</m.h1>
+                >Arthur Zimuldinov</m.h1>
               
               <m.h2 
                 className="text-2xl text-zinc-600 relative pl-24 home__subtitle font-montserrat"

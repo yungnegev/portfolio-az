@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Nobel";
+    src: url("../../public/fonts/Nobel Light Regular.otf");
+}
+
 body {
     @apply bg-[#F8F0E3] text-zinc-900 font-montserrat 
 }
