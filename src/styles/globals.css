@@ -35,9 +35,9 @@ body {
     top: 1rem;
 }
 
-.home__heading {
+/* .home__heading {
     font-family: 'Nobel';
-}
+} */
 
 @keyframes profile__animate {
     0% {
