@@ -7,7 +7,7 @@
 body {
     @apply bg-[#F8F0E3] text-zinc-900 font-montserrat 
 }
-
+/*  */
 .home__img {
     box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     outline: solid 12px rgba(0, 0, 0, 0.3);
