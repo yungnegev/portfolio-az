@@ -7,7 +7,7 @@
 @layer base {
     @font-face {
         font-family: "Nobel";
-        src: url("../../public/fonts/Nobel Light Regular.otf");
+        src: url("../../public/fonts/Nobel.otf");
     }
 }
 
