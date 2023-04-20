@@ -35,6 +35,10 @@ body {
     top: 1rem;
 }
 
+.home__heading {
+    font-family: 'Nobel';
+}
+
 @keyframes profile__animate {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;

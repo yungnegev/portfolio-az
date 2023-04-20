@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             {/* MAIN */}
             <div className="w-1/2 flex flex-col gap-4 font-poppins overflow-hidden">
               <m.h1 
-                className="font-nobel text-7xl"
+                className="font-nobel text-7xl home__heading"
                 initial={{ y: -70, opacity: 0.65 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
