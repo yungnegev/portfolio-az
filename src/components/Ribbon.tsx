@@ -47,67 +47,122 @@ const Ribbon = () => {
         <ul className='flex flex-col items-start justify-between ml-4 gap-20'>
             <li ref={ref1} className='flex mx-auto flex-col gap-4 w-[60%] justify-between'>
                 <LiIcon reference={ref1}/>
-                <div className='flex gap-4'>
+                <m.div 
+                    className='flex gap-4'
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}}
+                    viewport={{ once: true }}
+                    >
                     <SiHtml5 size={32}/>
                     <SiCss3 size={32}/>
                     <SiJavascript size={32}/>
-                </div>
-                <div>
+                </m.div>
+                <m.div 
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}}
+                    viewport={{ once: true }}
+                    >
                     HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
-                </div>
+                </m.div>
             </li>
 
             <li ref={ref2} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
                 <LiIcon reference={ref2}/>
-                <div className='flex gap-4'>
+                <m.div 
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}} 
+                    viewport={{ once: true }} 
+                    className='flex gap-4'
+                    >
                     <SiTypescript size={32}/>
                     <SiSass size={32}/>
                     <SiTailwindcss size={32}/>
-                </div>
-                <div>
+                </m.div>
+                <m.div
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}} 
+                    viewport={{ once: true }} 
+                    >
                     HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
-                </div>
+                </m.div>
             </li>
 
             <li ref={ref3} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
                 <LiIcon reference={ref3}/>
-                <div className='flex gap-4'>
+                <m.div 
+                    className='flex gap-4'
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}}  
+                    viewport={{ once: true }}
+                    >
                     <SiReact size={32}/>
                     <SiRedux size={32}/>
                     <SiVite size={32}/>
                     <SiNextdotjs size={32}/>
                     <SiWebpack size={32} />
-                </div>
-                <div>
+                </m.div>
+                <m.div
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}}  
+                    viewport={{ once: true }}
+                    >
                     HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
-                </div>
+                </m.div>
             </li>
 
             <li ref={ref4} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
                 <LiIcon reference={ref4}/>
-                <div className='flex gap-4'>
+                <m.div 
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}} 
+                    viewport={{ once: true }} 
+                    className='flex gap-4'
+                    >
                     <SiMongodb size={32}/>
                     <SiTrpc size={32}/>
                     <SiPrisma size={32}/>
                     <SiVercel size={32}/>
-                </div>
-                <div>
+                </m.div>
+                <m.div
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}} 
+                    viewport={{ once: true }} 
+                >
                     HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
-                </div>
+                </m.div>
             </li>
 
             <li ref={ref5} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
                 <LiIcon reference={ref5}/>
-                <div className='flex gap-4'>
+                <m.div 
+                    className='flex gap-4'
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}}
+                    viewport={{ once: true }}  
+                    >
                     <SiGnubash size={32}/>
                     <SiNginx size={32}/>
                     <SiNeovim size={32}/>
                     <SiDocker size={32}/>
                     <SiGit size={32}/>
-                </div>
-                <div>
+                </m.div>
+                <m.div
+                    initial={{y: 50}}
+                    whileInView={{y: 0}}
+                    transition={{duration: 0.5, type: 'spring'}} 
+                    viewport={{ once: true }}           
+                    >
                     HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
-                </div>
+                </m.div>
             </li>
         </ul>
     </div>
