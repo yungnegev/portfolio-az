@@ -39,7 +39,7 @@ const Projects: NextPage = () => {
     </Head>
     <main className='w-full mb-16 flex flex-col items-center justify-center'>
       <section className='w-full h-full inline-block p-32 pt-16 z-0'>
-        <h1 className='font-nobel text-7xl w-full text-center'>Projects & Templates</h1>
+        <h1 className='font-nobel text-7xl w-full text-center'><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
         <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32'>
           <div className='col-span-12'>
               <m.div
@@ -69,7 +69,7 @@ const Projects: NextPage = () => {
                 >
                 <Card
                   img={pr1src}
-                  link='yung-blog.vercel.app'
+                  link='https://yung-blog.vercel.app'
                   title='Personal Blog (MERN)'
                   summary='A blog front end as part of my MERN project. Technologies employed: vite, react, redux-toolkit, sass. Applied Redux for state management, primarily async requests using thunks (extra reducers for handling pending, fullfilled and rejected requests).'
                   type='Frontend part of a MERN app.'
@@ -99,7 +99,6 @@ const Projects: NextPage = () => {
         </div>
       </section>
     </main>
-
     </>
   )
 }
