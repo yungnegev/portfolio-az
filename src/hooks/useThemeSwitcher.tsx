@@ -1,4 +1,4 @@
-import React, { useEffect, useInsertionEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const useThemeSwitcher = () => {
 
