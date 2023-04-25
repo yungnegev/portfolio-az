@@ -47,7 +47,7 @@ const useThemeSwitcher = () => {
     }
   }, [mode])
 
-  return [mode, setMode]
+  return [mode, setMode] as const
 }
 
 export default useThemeSwitcher

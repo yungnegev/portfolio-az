@@ -53,7 +53,6 @@ const Navbar = () => {
             </Link>
 
             <button 
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-return
                 onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                 >
                 {
