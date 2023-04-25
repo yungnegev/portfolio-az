@@ -52,13 +52,16 @@ const Navbar = () => {
                 <AiFillGithub size={28} className='hover:text-zinc-700 active:scale-90'/>
             </Link>
 
-            <button>
+            <button 
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                >
                 {
                     mode === 'dark' 
                         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                        ? <Image src={Moon} alt='sun' />
+                        ? <Image width={20} height={20} src={Moon} alt='sun' />
                         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                        : <Image src={Sun} alt='sun' />
+                        : <Image width={20} height={20} src={Sun} alt='sun' />
                 }
             </button>
         </nav>
