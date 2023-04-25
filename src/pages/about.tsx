@@ -13,7 +13,7 @@ const About: NextPage = () => {
       <title>Arthur Zimuldinov | About</title>
       <meta name='description' content='about page'/>
     </Head>
-    <main className='w-full'>
+    <main className='w-full select-none'>
       <section className='w-full h-full p-32 pt-16 z-0 flex flex-col items-center justify-center gap-16 mb-60'>
         <h1 className='font-nobel text-7xl w-full text-center my-8'><span className='font-montserrat'>·</span> About Me <span className='font-montserrat'>·</span></h1>
         <div className='flex flex-col gap-20 justify-center items-center'>
