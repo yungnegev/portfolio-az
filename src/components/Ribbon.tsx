@@ -42,7 +42,7 @@ const Ribbon = () => {
     <div ref={ref} className='w-[75%] mx-auto relative'>
         <m.div  
             style={{scaleY: scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-zinc-900 origin-top'
+            className='absolute left-9 top-0 w-[4px] h-full bg-zinc-950 origin-top'
             />
         <ul className='flex flex-col items-start justify-between ml-4 gap-20'>
             <li ref={ref1} className='flex mx-auto flex-col gap-4 w-[60%] justify-between'>

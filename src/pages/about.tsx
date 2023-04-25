@@ -18,13 +18,13 @@ const About: NextPage = () => {
         <h1 className='font-nobel text-7xl w-full text-center my-8'><span className='font-montserrat'>·</span> About Me <span className='font-montserrat'>·</span></h1>
         <div className='flex flex-col gap-20 justify-center items-center'>
           <div className='w-[340px] flex flex-col gap-4 items-center justify-between rounded-3xl border-2 
-                          border-solid border-zinc-900 shadow-2xl p-6 relative bg-[#F8F0E3] dark:bg-zinc-800'>
-          <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-900'/>
+                          border-solid border-zinc-950 shadow-2xl p-6 relative bg-[#F8F0E3] dark:bg-zinc-800'>
+          <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-950'/>
           <Image 
             src={profSrc} 
             placeholder='blur' 
             alt={'portrait'} 
-            className='w-[300px] h-[300px] border-solid border-2 border-zinc-900 overflow-none rounded-lg'
+            className='w-[300px] h-[300px] border-solid border-2 border-zinc-950 overflow-none rounded-lg'
             height={300}
             width={300}
             />

@@ -39,7 +39,7 @@ const Card = (props: CardProps) => {
           <Link href={props.link} target='_blank' className='hover:underline underline-offset-4'>
             <h2 className='w-full text-left text-3xl'>{props.title}</h2>
           </Link>
-          <span className='text-[#be274c] text-xl'>{props.type}</span>
+          <span className='text-[#be274c] dark:text-[#5eead4] text-xl'>{props.type}</span>
           <p>{props.summary}</p>
           <div className='flex gap-4 items-center mt-4'>
             <Link href={props.github} target='_blank'>
