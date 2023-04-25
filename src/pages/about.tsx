@@ -18,7 +18,7 @@ const About: NextPage = () => {
         <h1 className='font-nobel text-7xl w-full text-center my-8'><span className='font-montserrat'>·</span> About Me <span className='font-montserrat'>·</span></h1>
         <div className='flex flex-col gap-20 justify-center items-center'>
           <div className='w-[340px] flex flex-col gap-4 items-center justify-between rounded-3xl border-2 
-                          border-solid border-zinc-900 shadow-2xl p-6 relative bg-[#F8F0E3]'>
+                          border-solid border-zinc-900 shadow-2xl p-6 relative bg-[#F8F0E3] dark:bg-zinc-800'>
           <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-900'/>
           <Image 
             src={profSrc} 

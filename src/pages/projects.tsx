@@ -37,7 +37,7 @@ const Projects: NextPage = () => {
       <title>Arthur Zimuldinov | Projects</title> 
       <meta name='description' content='projects' />
     </Head>
-    <main className='w-full mb-16 flex flex-col items-center justify-center'>
+    <main className='w-full mb-16 flex flex-col items-center justify-center select-none'>
       <section className='w-full h-full inline-block p-32 pt-16 z-0'>
         <h1 className='font-nobel text-7xl w-full text-center'><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
         <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32'>

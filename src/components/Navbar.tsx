@@ -24,7 +24,7 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
         <Link href={href} className={`${className} relative group`}>
             {title}
 
-            <span className={`bg-zinc-900 h-[1px] inline-block absolute left-0 -bottom-1
+            <span className={`bg-zinc-950 dark:bg-white h-[1px] inline-block absolute left-0 -bottom-1
                             group-hover:w-full transition-[width] ease duration-300 
                             ${path === href ? 'w-full' : 'w-0'}`}>&nbsp;</span>
         </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
   const [ mode, setMode ] = useThemeSwitcher()
 
   return (
-    <header className='w-full px-32 py-8 font-bold flex items-center justify-between select-none'>
+    <header className='w-full px-32 py-8 font-bold flex items-center justify-between select-none dark:bg-zinc-800 dark:text-white'>
         <nav>
             <CustomLink href='/' title='Home' className='mr-4'/>
             <CustomLink href='/about' title='About' className='mx-4'/>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
         <nav className='flex items-center gap-4 p-2'>
             <Link href={'https://github.com/yungnegev'} target='_blank'>
-                <AiFillGithub size={28} className='hover:text-zinc-700 active:scale-90'/>
+                <AiFillGithub size={28} className='hover:text-zinc-700 active:scale-90 dark:fill-zinc-50'/>
             </Link>
 
             <button 
@@ -58,9 +58,9 @@ const Navbar = () => {
                 {
                     mode === 'dark' 
                         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                        ? <Image width={20} height={20} src={Moon} alt='sun' />
+                        ? <Image width={24} height={24} src={Moon} alt='moon' className='dark:bg-white rounded-full p-1' />
                         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                        : <Image width={20} height={20} src={Sun} alt='sun' />
+                        : <Image width={24} height={24} src={Sun} alt='sun' className='dark:bg-white rounded-full p-1' />
                 }
             </button>
         </nav>
