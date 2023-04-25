@@ -23,7 +23,7 @@ const Home: NextPage = () => {
               animate={{ x: 1 }}
               transition={{ duration: 0.5 }}
               >
-              <Image src={profSrc} alt='AZ' width={360} height={360} placeholder='blur' className="home__img"/> 
+              <Image src={profSrc} alt='AZ' width={360} height={360} placeholder='blur' priority className="home__img"/> 
             </m.div>
             {/* MAIN */}
             <div className="w-1/2 flex flex-col gap-4 font-poppins overflow-hidden">

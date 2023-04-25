@@ -21,6 +21,7 @@ const About: NextPage = () => {
                           border-solid border-zinc-950 shadow-2xl p-6 relative bg-[#F8F0E3] dark:bg-zinc-800'>
           <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-950'/>
           <Image 
+            priority
             src={profSrc} 
             placeholder='blur' 
             alt={'portrait'} 
