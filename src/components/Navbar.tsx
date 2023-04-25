@@ -1,8 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
 import { AiFillGithub } from 'react-icons/ai'
+import useThemeSwitcher from '~/hooks/useThemeSwitcher'
+import Sun from '../../public/icons/sun.svg'
+import Moon from '../../public/icons/moon.svg'
 
 type CustomLinkProps = {
     href: string,
@@ -28,6 +32,9 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
 }
 
 const Navbar = () => {
+
+  const [ mode, setMode ] = useThemeSwitcher()
+
   return (
     <header className='w-full px-32 py-8 font-bold flex items-center justify-between select-none'>
         <nav>
@@ -40,10 +47,20 @@ const Navbar = () => {
             <Logo />
         </div>
 
-        <nav>
+        <nav className='flex items-center gap-4 p-2'>
             <Link href={'https://github.com/yungnegev'} target='_blank'>
                 <AiFillGithub size={28} className='hover:text-zinc-700 active:scale-90'/>
             </Link>
+
+            <button>
+                {
+                    mode === 'dark' 
+                        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                        ? <Image src={Moon} alt='sun' />
+                        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                        : <Image src={Sun} alt='sun' />
+                }
+            </button>
         </nav>
     </header>
   )
