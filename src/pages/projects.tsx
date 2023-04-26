@@ -13,21 +13,30 @@ const Projects: NextPage = () => {
 
   const controls = useAnimation();
   const ref = useRef(null)
+  const ref2 = useRef(null)
   const inView = useInView(ref);
+  const inView2 = useInView(ref2)
+  
   useEffect(() => {
     if (inView) {
       void controls.start("visible");
     }
   }, [controls, inView]);
+  
+  useEffect(() => {
+    if (inView2) {
+      void controls.start("visible");
+    }
+  }, [controls, inView2]);
 
   const leftVariants = {
-    visible: { x: 0 },
-    hidden: { x: -100 }
+    visible: { y: 0 },
+    hidden: { y: 100 }
   }
 
   const rightVariants = {
-    visible: { x: 0 },
-    hidden: { x: 100 }
+    visible: { y: 0 },
+    hidden: { y: 100 }
   }
 
   
@@ -39,12 +48,14 @@ const Projects: NextPage = () => {
     </Head>
     <main className='w-full mb-16 flex flex-col items-center justify-center select-none'>
       <section className='w-full h-full inline-block p-32 pt-16 z-0 xl:p-24 lg:p-16 md:p-12 sm:p-8'>
+        
         <h1 className='font-nobel text-6xl w-full text-center xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl sm:mt-10 '><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
+        
         <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
           <div className='col-span-12'>
               <m.div
-                initial={{ x: -100 }}
-                animate={{ x: 0 }}
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
                 transition={{ duration: 0.6 }}
                 className='flex justify-center'
                 >
@@ -79,7 +90,7 @@ const Projects: NextPage = () => {
           </div>
           <div className='col-span-6 sm:col-span-12 flex justify-start sm:justify-center'>
               <m.div
-                ref={ref}
+                ref={ref2}
                 initial='hidden'
                 animate={controls}
                 variants={rightVariants}
