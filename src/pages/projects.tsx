@@ -7,6 +7,7 @@ import CardDouble from '~/components/DoubleCard';
 import pr1src from '../../public/images/project1.png'
 import pr3src from '../../public/images/project3.png'
 import pr5src from '../../public/images/project5.png'
+import TransitionEffect from '~/components/TransitionEffect';
 
 
 const Projects: NextPage = () => {
@@ -46,6 +47,7 @@ const Projects: NextPage = () => {
       <title>Arthur Zimuldinov | Projects</title> 
       <meta name='description' content='projects' />
     </Head>
+    <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center select-none'>
       <section className='w-full h-full inline-block p-32 pt-16 z-0 xl:p-24 lg:p-16 md:p-12 sm:p-8'>
         

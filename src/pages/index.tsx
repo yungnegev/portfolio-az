@@ -5,6 +5,8 @@ import { motion as m } from 'framer-motion'
 import Link from "next/link";
 import { RxExternalLink } from 'react-icons/rx'
 import { SiMinutemailer } from 'react-icons/si'
+import TransitionEffect from "~/components/TransitionEffect";
+import Head from "next/head";
 
 
 
@@ -13,6 +15,12 @@ const Home: NextPage = () => {
   const MLink = m(Link)
 
   return (
+      <>
+      <Head>
+        <title>Arthur Zimuldinov | Home</title>
+        <meta name='description' content='about page'/>
+      </Head>
+      <TransitionEffect />
       <main className="flex items-center w-full min-h-screen select-none dark:bg-zinc-800">
         <section className="w-full h-full inline-block p-32 xl:p-24 lg:p-16 md:p-12 sm:p-8 pt-0 z-0">
           <div className="flex lg:flex-col lg:gap-12 items-center justify-between w-full">
@@ -73,6 +81,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
+      </>
   );
 };
 

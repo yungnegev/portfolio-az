@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import profSrc from '../../public/images/profile.jpg'
 import Ribbon from '~/components/Ribbon';
+import TransitionEffect from '~/components/TransitionEffect';
 
 
 const About: NextPage = () => {
@@ -13,6 +14,7 @@ const About: NextPage = () => {
       <title>Arthur Zimuldinov | About</title>
       <meta name='description' content='about page'/>
     </Head>
+    <TransitionEffect />
     <main className='w-full select-none'>
       <section className='w-full h-full p-32 pt-0 z-0 flex flex-col items-center justify-center gap-16 mb-60 xl:p-24 lg:p-16 md:p-12 sm:p-8'>
         <h1 className='font-nobel text-6xl w-full text-center my-8 xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl'><span className='font-montserrat'>·</span> About Me <span className='font-montserrat'>·</span></h1>
