@@ -22,8 +22,9 @@ const Card = (props: CardProps) => {
   const MLink = m(Link)
 
   return (
-    <article className='w-full max-w-[480px] h-[660px] flex flex-col gap-4 items-center justify-between rounded-3xl border-2 
-                          border-solid border-zinc-950 shadow-2xl p-12 relative bg-[#F8F0E3] dark:bg-zinc-800 dark:text-white'>
+    <article className='w-full max-w-[480px] h-[660px] sm:h-auto flex flex-col gap-4 items-center justify-between rounded-3xl border-2 
+                          border-solid border-zinc-950 shadow-2xl p-12 relative bg-[#F8F0E3] dark:bg-zinc-800 dark:text-white
+                          lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-6 lg:gap-8 md:gap-2'>
         {/* shadow div */}
         <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-900'/>
   
@@ -37,11 +38,11 @@ const Card = (props: CardProps) => {
   
         <div className='w-full flex flex-col items-start justify-between gap-4'>
           <Link href={props.link} target='_blank' className='hover:underline underline-offset-4'>
-            <h2 className='w-full text-left text-3xl'>{props.title}</h2>
+            <h2 className='w-full text-left text-3xl sm:text-2xl'>{props.title}</h2>
           </Link>
-          <span className='text-[#be274c] dark:text-[#5eead4] text-xl'>{props.type}</span>
-          <p>{props.summary}</p>
-          <div className='flex gap-4 items-center mt-4'>
+          <span className='text-[#be274c] dark:text-[#5eead4] text-xl sm:text-lg'>{props.type}</span>
+          <p className='sm:text-base'>{props.summary}</p>
+          <div className='flex gap-4 items-center mt-4 sm:mt-2'>
             <Link href={props.github} target='_blank'>
               <AiFillGithub size={36}/>
             </Link>

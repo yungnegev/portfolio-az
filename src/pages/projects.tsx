@@ -40,7 +40,7 @@ const Projects: NextPage = () => {
     <main className='w-full mb-16 flex flex-col items-center justify-center select-none'>
       <section className='w-full h-full inline-block p-32 pt-16 z-0 xl:p-24 lg:p-16 md:p-12 sm:p-8'>
         <h1 className='font-nobel text-6xl w-full text-center xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl'><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
-        <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32'>
+        <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
           <div className='col-span-12'>
               <m.div
                 initial={{ x: -100 }}
@@ -58,7 +58,7 @@ const Projects: NextPage = () => {
                   />
               </m.div>
           </div>
-          <div className='col-span-6 flex justify-end'>
+          <div className='col-span-6 sm:col-span-12 flex justify-end sm:justify-center'>
               <m.div
                 ref={ref}
                 initial='hidden'
@@ -77,7 +77,7 @@ const Projects: NextPage = () => {
                   />
               </m.div>
           </div>
-          <div className='col-span-6 flex justify-start'>
+          <div className='col-span-6 sm:col-span-12 flex justify-start sm:justify-center'>
               <m.div
                 ref={ref}
                 initial='hidden'
