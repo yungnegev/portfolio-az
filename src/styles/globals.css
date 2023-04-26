@@ -8,6 +8,7 @@
     @font-face {
         font-family: "Nobel";
         src: url("/fonts/Nobel.otf");
+        font-display: swap;
     }
 }
 

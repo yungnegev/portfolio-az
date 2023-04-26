@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <>
       <Head>
         <title>Arthur Zimuldinov | Home</title>
-        <meta name='description' content='about page'/>
+        <meta name='robots' content='all'/>
       </Head>
       <TransitionEffect />
       <main className="flex items-center w-full min-h-screen select-none dark:bg-zinc-800">
