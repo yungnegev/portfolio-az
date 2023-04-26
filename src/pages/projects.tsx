@@ -38,8 +38,8 @@ const Projects: NextPage = () => {
       <meta name='description' content='projects' />
     </Head>
     <main className='w-full mb-16 flex flex-col items-center justify-center select-none'>
-      <section className='w-full h-full inline-block p-32 pt-16 z-0'>
-        <h1 className='font-nobel text-7xl w-full text-center'><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
+      <section className='w-full h-full inline-block p-32 pt-16 z-0 xl:p-24 lg:p-16 md:p-12 sm:p-8'>
+        <h1 className='font-nobel text-6xl w-full text-center xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl'><span className='font-montserrat'>·</span> Projects & Templates <span className='font-montserrat'>·</span></h1>
         <div className='grid grid-cols-12 gap-24 pt-28 gap-y-32'>
           <div className='col-span-12'>
               <m.div

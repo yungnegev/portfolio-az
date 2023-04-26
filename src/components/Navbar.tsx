@@ -69,7 +69,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='w-full px-32 py-8 font-bold flex items-center justify-between select-none dark:bg-zinc-800 dark:text-white relative'>
+    <header className='w-full px-32 lg:px-16 md:px-12 sm:px-8 py-8 font-bold flex items-center justify-between select-none dark:bg-zinc-800 dark:text-white relative'>
         
         {/* MOBILE BUTTON */}
         <button onClick={ handleClick } className='hidden lg:flex'>

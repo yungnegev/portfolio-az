@@ -39,13 +39,13 @@ const Ribbon = () => {
   })  
 
   return (
-    <div ref={ref} className='w-[75%] mx-auto relative'>
+    <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
         <m.div  
             style={{scaleY: scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-zinc-950 origin-top'
+            className='absolute left-9 top-0 w-[4px] h-full bg-zinc-950 origin-top md:w-[2px] md:left-[30px] xs:left-[20px]'
             />
-        <ul className='flex flex-col items-start justify-between ml-4 gap-20'>
-            <li ref={ref1} className='flex mx-auto flex-col gap-4 w-[60%] justify-between'>
+        <ul className='flex flex-col items-start justify-between ml-4 gap-20 md:text-sm xs:ml-2'>
+            <li ref={ref1} className='flex mx-auto flex-col gap-4 w-[60%] md:w-[80%] justify-between'>
                 <LiIcon reference={ref1}/>
                 <m.div 
                     className='flex gap-4'
@@ -68,7 +68,7 @@ const Ribbon = () => {
                 </m.div>
             </li>
 
-            <li ref={ref2} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
+            <li ref={ref2} className='flex flex-col mx-auto gap-4 w-[60%] md:w-[80%] justify-between'>
                 <LiIcon reference={ref2}/>
                 <m.div 
                     initial={{y: 50}}
@@ -91,7 +91,7 @@ const Ribbon = () => {
                 </m.div>
             </li>
 
-            <li ref={ref3} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
+            <li ref={ref3} className='flex flex-col mx-auto gap-4 w-[60%] md:w-[80%] justify-between'>
                 <LiIcon reference={ref3}/>
                 <m.div 
                     className='flex gap-4'
@@ -116,7 +116,7 @@ const Ribbon = () => {
                 </m.div>
             </li>
 
-            <li ref={ref4} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
+            <li ref={ref4} className='flex flex-col mx-auto gap-4 w-[60%] md:w-[80%] justify-between'>
                 <LiIcon reference={ref4}/>
                 <m.div 
                     initial={{y: 50}}
@@ -140,7 +140,7 @@ const Ribbon = () => {
                 </m.div>
             </li>
 
-            <li ref={ref5} className='flex flex-col mx-auto gap-4 w-[60%] justify-between'>
+            <li ref={ref5} className='flex flex-col mx-auto gap-4 w-[60%] md:w-[80%] justify-between'>
                 <LiIcon reference={ref5}/>
                 <m.div 
                     className='flex gap-4'
