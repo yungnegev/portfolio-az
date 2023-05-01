@@ -33,7 +33,7 @@ const About: NextPage = () => {
             />
           </div> */}
           <div className='w-[710px] md:w-[360px]'>
-            <p className='text-lg text-center'>I am web developer based in Marbella, Spain. Task-driven and focused on achieving high-quality results. I have always been passionate about programming and computers in general, tinkering with linux distributions and making my own home servers. I am eager to tackle web development and design challenges. Scroll down if you want to see the list of technologies I use. </p>
+            <p className='text-lg text-center'>I am web developer based in Marbella, Spain. Task-driven and focused on achieving high-quality results. I have always been passionate about programming and computers in general, tinkering with linux distributions and making personal home servers in my spare time. I am eager to tackle web development and design challenges. Scroll down if you want to see the list of technologies I use. </p>
           </div>
         </div>
         <h1 className='font-nobel text-6xl w-full text-center my-20 xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl'><span className='font-montserrat'>·</span> Tools I Use <span className='font-montserrat'>·</span></h1>
