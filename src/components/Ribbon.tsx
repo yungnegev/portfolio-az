@@ -113,7 +113,7 @@ const Ribbon = () => {
                     transition={{duration: 0.5, type: 'spring'}}  
                     viewport={{ once: true }}
                     >
-                    The modern web development environment is based on build tools and frameworks, the ones I use are React, Next.js which is a meta-framework built on top of react. As for build tools I have worked with Webpack and VIte. For complex state management needs I use Redux and RTK.
+                    The modern web development environment is comprised of build tools and frameworks, on the front end, I use are React and Next.js, a meta-framework built on top of react. As for build tools I have worked with Webpack and VIte. For complex state management needs I use Redux and RTK.
                 </m.div>
             </li>
 
