@@ -22,6 +22,7 @@ import {
     SiDocker,
     SiGit,
     SiWebpack,
+    SiNodedotjs,
 } from 'react-icons/si'
 
 const Ribbon = () => {
@@ -87,7 +88,7 @@ const Ribbon = () => {
                     transition={{duration: 0.5, type: 'spring'}} 
                     viewport={{ once: true }} 
                     >
-                    HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
+                    Typescript allows me to make my code more predictable and safe. I use CSS pre-processors such as SASS or Tailwind to improve the quality of my work when writing out styles. 
                 </m.div>
             </li>
 
@@ -112,7 +113,7 @@ const Ribbon = () => {
                     transition={{duration: 0.5, type: 'spring'}}  
                     viewport={{ once: true }}
                     >
-                    HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
+                    The modern web development environment is based on build tools and frameworks, the ones I use are React, Next.js which is a meta-framework built on top of react. As for build tools I have worked with Webpack and VIte. For complex state management needs I use Redux and RTK.
                 </m.div>
             </li>
 
@@ -125,6 +126,7 @@ const Ribbon = () => {
                     viewport={{ once: true }} 
                     className='flex gap-4'
                     >
+                    <SiNodedotjs size={32}/>   
                     <SiMongodb size={32}/>
                     <SiTrpc size={32}/>
                     <SiPrisma size={32}/>
@@ -136,7 +138,7 @@ const Ribbon = () => {
                     transition={{duration: 0.5, type: 'spring'}} 
                     viewport={{ once: true }} 
                 >
-                    HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
+                    For the back-end I tend to use Node and Express as well as Mongodb or an SQL database with the Prisma ORM. For my Next.js projects I also use tRPC and deploy on vercel.
                 </m.div>
             </li>
 
@@ -161,7 +163,7 @@ const Ribbon = () => {
                     transition={{duration: 0.5, type: 'spring'}} 
                     viewport={{ once: true }}           
                     >
-                    HTML, CSS & JS are the backbone of the internet. Even though most of modern web development is done through frameworks, a deep understanding of these fundamental technologies is essential for any developer.
+                    I have always been interested in Linux, I am comfortable with terminal commands and bash scripts, I use neovim as one of my editors and am proficient at git and docker.
                 </m.div>
             </li>
         </ul>

@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                 transition={{ duration: 1.4 }}
                 >{'<Full-Stack Developer />'}</m.h2>
               
-              <p className="text-l text-zinc-600 dark:text-zinc-200 lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero inventore quia illo! Voluptatem, qui.</p>
+              <p className="text-l text-zinc-600 dark:text-zinc-200 lg:hidden">Task driven and eager to tackle web development and design challenges.</p>
               
               <m.div 
                 className="flex items-center self-start mt-4 gap-6 lg:w-full lg:justify-center"
