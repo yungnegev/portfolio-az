@@ -58,7 +58,7 @@ const Home: NextPage = () => {
                 transition={{ duration: 0.5 }}
                 >
                 <MLink 
-                  href={'/dummy.pdf'}
+                  href={'/AZ-CV-V1.pdf'}
                   target={"_blank"}
                   className="flex items-center bg-zinc-950 text-white p-3 px-6 rounded-md gap-2"
                   whileHover={{
